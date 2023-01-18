@@ -4,6 +4,12 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "articles#index"
 
+  resources :articles
+=begin
   # map GET /articles requests to the index action of ArticlesController
-  get "/articles", to: "articles#index" 
+  get "/articles", to: "articles#index"
+  
+  # define route for inidivual articles
+  get "/articles/:id", to: "articles#show" 
+=end
 end

@@ -8,6 +8,18 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
+    <%# dark theme %>
+    <style>
+      body {
+        background-color: #222222;
+      }
+
+      body > * {
+        font-family: sans-serif;
+        color: #eeeeee;
+      }
+    </style>
   </head>
 
   <body>
