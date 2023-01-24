@@ -2,7 +2,7 @@
     <div>
         <%= form.label :title %><br>
         <%= form.text_field :title %>
-        <% article.errors.full_messages_for(:title).each do |error_message|%>
+        <% article.errors.full_messages_for(:title).each do |error_message| %>
             <div><%= error_message %>
         <% end %>
     </div>
